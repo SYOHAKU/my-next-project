@@ -13,6 +13,8 @@ dk?:string;
 };
 };
 
+export const revalidate = 0;
+
 export default async function Page( {params,searchParams}:Props){
 const data = await getNewsDetail(params.slug,{
 draftKey:searchParams.dk,
