@@ -63,6 +63,11 @@ const listData = await client
 .getList<News>({
 endpoint:"news",
 queries,
+customRequestInit:{
+next:{
+revalidate:queries?.draftKey === undefined ? 60 :0,
+},
+},
 });
 return listData;
 };
