@@ -9,10 +9,10 @@
 // export const config = {}
 // matcher: "/about/:path*";
 
-import {createNextAuthMiddleware} from "nextjs-basic-auth-middleware";
+// import {createNextAuthMiddleware} from "nextjs-basic-auth-middleware";
 
-export const middleware = createNextAuthMiddleware();
+// export const middleware = createNextAuthMiddleware();
 
-export const config = {
-mathcer: ["/(.*)"],
-}
+// export const config = {
+// mathcer: ["/(.*)"],
+// }
